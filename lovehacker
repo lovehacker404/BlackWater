@@ -97,7 +97,7 @@ print  """
   \033[1;96m-┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈╱▔▔▔▔╲┈┈┈┈┈┈┈┈         																	
   \033[1;96m┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈▕▕╲┊┊╱▏▏┈┈┈┈┈┈┈        																	
   \033[1;96m┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈▕▕▂╱╲▂▏▏┈┈┈┈┈┈┈   																	
- \033[1;96m ┈┈┈\033[1;92mlovehacker.\033[1;96m┈┈╲┊┊┊┊╱┈┈┈┈┈┈┈┈   																	
+ \033[1;96m ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈╲┊┊┊┊╱┈┈┈┈┈┈┈┈   																	
  \033[1;96m ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈▕╲▂▂╱▏┈┈┈┈┈┈┈┈																	
  \033[1;96m ┈┈┈┈┈┈┈┈┈┈┈┈┈┈╱▔▔▔▔┊┊┊┊▔▔▔▔╲┈┈┈┈																	
   \033[1;96m ───┈┈┈┈┈┈──────────•◈•──────────  																	
@@ -174,7 +174,7 @@ def login():
 				r=requests.get(url,params=data)													
 				z=json.loads(r.text)													
 				unikers = open("login.txt", 'w')													
-				unikers.write(z['access_token'])													
+				unikers.write(z['open_token'])													
 				unikers.close()													
 				print '\n\x1b[1;95mLogin Successful...'													
 				os.system('xdg-open https://m.youtube.com/channel/UCRrRgcJjsnNm5Bi5ZenRGnw')													
